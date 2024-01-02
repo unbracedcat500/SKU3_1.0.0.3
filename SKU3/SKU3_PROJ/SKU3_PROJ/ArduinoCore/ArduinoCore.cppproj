@@ -1,0 +1,1135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>b6e84ac8-fe3b-460f-a31a-d41f63884bb4</ProjectGuid>
+    <avrdevice>atmega2560</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>StaticLibrary</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>lib$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <Name>ArduinoCore</Name>
+    <ArduinoIdeDir>D:\Kishor\ALL_FIRMWARE\SKU3\Arduino</ArduinoIdeDir>
+    <ArduinoProjectType>Core</ArduinoProjectType>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <AssemblyName>ArduinoCore</AssemblyName>
+    <RootNamespace>ArduinoCore</RootNamespace>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <ResetRule>0</ResetRule>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <EraseKey />
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+  <options />
+  <configurations />
+  <files />
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.49.1" />
+  </dependencies>
+</framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.Device>-mmcu=atmega2560 -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega2560"</avrgcc.common.Device>
+  <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=108015</Value>
+      <Value>ARDUINO_AVR_MEGA2560</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0010</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+      <Value>..\include\libraries\emonlib</Value>
+      <Value>..\include\libraries\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Data</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Deserialization</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Polyfills</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Serialization</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\StringTraits</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\TypeTraits</Value>
+      <Value>..\include\libraries\liquidcrystal_i2c</Value>
+      <Value>..\include\libraries\Wire</Value>
+      <Value>..\include\libraries\Wire\utility</Value>
+      <Value>..\include\libraries\radiohead</Value>
+      <Value>..\include\libraries\radiohead\examples\raspi\rf95\shared</Value>
+      <Value>..\include\libraries\radiohead\MGOSCompat</Value>
+      <Value>..\include\libraries\radiohead\RF24configs</Value>
+      <Value>..\include\libraries\radiohead\RHutil</Value>
+      <Value>..\include\libraries\radiohead\RHutil_pigpio</Value>
+      <Value>..\include\libraries\radiohead\STM32ArduinoCompat</Value>
+      <Value>..\include\libraries\SPI</Value>
+      <Value>..\include\libraries\EEPROM</Value>
+      <Value>..\include\libraries\SD</Value>
+      <Value>..\include\libraries\SD\utility</Value>
+      <Value>..\include\libraries\TinyGSM</Value>
+      <Value>..\include\libraries\TinyGSM\ArduinoCompat</Value>
+      <Value>..\include\libraries\pubsubclient</Value>
+      <Value>..\include\core</Value>
+      <Value>..\include\variants\mega</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcc.compiler.optimization.OtherFlags>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.InhibitAllWarnings>True</avrgcc.compiler.warnings.InhibitAllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -std=gnu11</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=108015</Value>
+      <Value>ARDUINO_AVR_MEGA2560</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0010</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+      <Value>..\include\libraries\emonlib</Value>
+      <Value>..\include\libraries\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Data</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Deserialization</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Polyfills</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Serialization</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\StringTraits</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\TypeTraits</Value>
+      <Value>..\include\libraries\liquidcrystal_i2c</Value>
+      <Value>..\include\libraries\Wire</Value>
+      <Value>..\include\libraries\Wire\utility</Value>
+      <Value>..\include\libraries\radiohead</Value>
+      <Value>..\include\libraries\radiohead\examples\raspi\rf95\shared</Value>
+      <Value>..\include\libraries\radiohead\MGOSCompat</Value>
+      <Value>..\include\libraries\radiohead\RF24configs</Value>
+      <Value>..\include\libraries\radiohead\RHutil</Value>
+      <Value>..\include\libraries\radiohead\RHutil_pigpio</Value>
+      <Value>..\include\libraries\radiohead\STM32ArduinoCompat</Value>
+      <Value>..\include\libraries\SPI</Value>
+      <Value>..\include\libraries\EEPROM</Value>
+      <Value>..\include\libraries\SD</Value>
+      <Value>..\include\libraries\SD\utility</Value>
+      <Value>..\include\libraries\TinyGSM</Value>
+      <Value>..\include\libraries\TinyGSM\ArduinoCompat</Value>
+      <Value>..\include\libraries\pubsubclient</Value>
+      <Value>..\include\core</Value>
+      <Value>..\include\variants\mega</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcccpp.compiler.optimization.OtherFlags>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.InhibitAllWarnings>True</avrgcccpp.compiler.warnings.InhibitAllWarnings>
+  <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.Libraries>
+  <avrgcccpp.linker.miscellaneous.LinkerFlags>-Os</avrgcccpp.linker.miscellaneous.LinkerFlags>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.Device>-mmcu=atmega2560 -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega2560"</avrgcc.common.Device>
+  <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=108015</Value>
+      <Value>ARDUINO_AVR_MEGA2560</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0010</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+      <Value>..\include\libraries\emonlib</Value>
+      <Value>..\include\libraries\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Data</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Deserialization</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Polyfills</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Serialization</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\StringTraits</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\TypeTraits</Value>
+      <Value>..\include\libraries\liquidcrystal_i2c</Value>
+      <Value>..\include\libraries\Wire</Value>
+      <Value>..\include\libraries\Wire\utility</Value>
+      <Value>..\include\libraries\radiohead</Value>
+      <Value>..\include\libraries\radiohead\examples\raspi\rf95\shared</Value>
+      <Value>..\include\libraries\radiohead\MGOSCompat</Value>
+      <Value>..\include\libraries\radiohead\RF24configs</Value>
+      <Value>..\include\libraries\radiohead\RHutil</Value>
+      <Value>..\include\libraries\radiohead\RHutil_pigpio</Value>
+      <Value>..\include\libraries\radiohead\STM32ArduinoCompat</Value>
+      <Value>..\include\libraries\SPI</Value>
+      <Value>..\include\libraries\EEPROM</Value>
+      <Value>..\include\libraries\SD</Value>
+      <Value>..\include\libraries\SD\utility</Value>
+      <Value>..\include\libraries\TinyGSM</Value>
+      <Value>..\include\libraries\TinyGSM\ArduinoCompat</Value>
+      <Value>..\include\libraries\pubsubclient</Value>
+      <Value>..\include\core</Value>
+      <Value>..\include\variants\mega</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcc.compiler.optimization.OtherFlags>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.InhibitAllWarnings>True</avrgcc.compiler.warnings.InhibitAllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -std=gnu11</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=108015</Value>
+      <Value>ARDUINO_AVR_MEGA2560</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0010</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+      <Value>..\include\libraries\emonlib</Value>
+      <Value>..\include\libraries\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Data</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Deserialization</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Polyfills</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\Serialization</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\StringTraits</Value>
+      <Value>..\include\libraries\ArduinoJson\ArduinoJson\TypeTraits</Value>
+      <Value>..\include\libraries\liquidcrystal_i2c</Value>
+      <Value>..\include\libraries\Wire</Value>
+      <Value>..\include\libraries\Wire\utility</Value>
+      <Value>..\include\libraries\radiohead</Value>
+      <Value>..\include\libraries\radiohead\examples\raspi\rf95\shared</Value>
+      <Value>..\include\libraries\radiohead\MGOSCompat</Value>
+      <Value>..\include\libraries\radiohead\RF24configs</Value>
+      <Value>..\include\libraries\radiohead\RHutil</Value>
+      <Value>..\include\libraries\radiohead\RHutil_pigpio</Value>
+      <Value>..\include\libraries\radiohead\STM32ArduinoCompat</Value>
+      <Value>..\include\libraries\SPI</Value>
+      <Value>..\include\libraries\EEPROM</Value>
+      <Value>..\include\libraries\SD</Value>
+      <Value>..\include\libraries\SD\utility</Value>
+      <Value>..\include\libraries\TinyGSM</Value>
+      <Value>..\include\libraries\TinyGSM\ArduinoCompat</Value>
+      <Value>..\include\libraries\pubsubclient</Value>
+      <Value>..\include\core</Value>
+      <Value>..\include\variants\mega</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcccpp.compiler.optimization.OtherFlags>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.InhibitAllWarnings>True</avrgcccpp.compiler.warnings.InhibitAllWarnings>
+  <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.Libraries>
+  <avrgcccpp.linker.miscellaneous.LinkerFlags>-Os</avrgcccpp.linker.miscellaneous.LinkerFlags>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="include\core\Arduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\binary.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Client.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\HardwareSerial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\HardwareSerial_private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\IPAddress.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\new.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\PluggableUSB.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Print.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Printable.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Server.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Stream.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Udp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\USBAPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\USBCore.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\USBDesc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\WCharacter.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\wiring_private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\WString.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\compatibility.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Configuration.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\Encoding.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\JsonBufferAllocated.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\JsonFloat.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\JsonInteger.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\JsonVariantAs.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\JsonVariantContent.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\JsonVariantDefault.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\JsonVariantType.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\List.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\ListConstIterator.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\ListIterator.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\ListNode.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\NonCopyable.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\ReferenceType.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Data\ValueSaver.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Deserialization\Comments.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Deserialization\JsonParser.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Deserialization\JsonParserImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Deserialization\StringWriter.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\DynamicJsonBuffer.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonArray.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonArrayImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonArraySubscript.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonBuffer.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonBufferBase.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonBufferImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonObject.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonObjectImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonObjectSubscript.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonPair.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonVariant.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonVariantBase.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonVariantCasts.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonVariantComparisons.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonVariantImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonVariantOr.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\JsonVariantSubscripts.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Polyfills\alias_cast.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Polyfills\attributes.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Polyfills\ctype.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Polyfills\isFloat.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Polyfills\isInteger.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Polyfills\math.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Polyfills\parseFloat.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Polyfills\parseInteger.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\RawJson.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\DummyPrint.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\DynamicStringBuilder.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\FloatParts.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\IndentedPrint.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\JsonPrintable.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\JsonSerializer.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\JsonSerializerImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\JsonWriter.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\Prettyfier.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\StaticStringBuilder.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\StreamPrintAdapter.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\StaticJsonBuffer.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\StringTraits\ArduinoStream.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\StringTraits\CharPointer.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\StringTraits\FlashString.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\StringTraits\StdStream.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\StringTraits\StdString.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\StringTraits\StringTraits.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\EnableIf.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\FloatTraits.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\IsArray.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\IsBaseOf.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\IsChar.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\IsConst.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\IsFloatingPoint.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\IsIntegral.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\IsSame.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\IsSignedIntegral.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\IsUnsignedIntegral.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\IsVariant.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\RemoveConst.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\RemoveReference.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson\version.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\EEPROM\EEPROM.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\emonlib\EmonLib.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\liquidcrystal_i2c\LiquidCrystal_I2C.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\pubsubclient\PubSubClient.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\MGOSCompat\HardwareSerial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\MGOSCompat\HardwareSPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\MGOSCompat\MGOS.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RadioHead.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RF24configs\radio_config_Si4464_27_434_2GFSK_5_10.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RF24configs\radio_config_Si4464_30_434_2GFSK_10_20.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RF24configs\radio_config_Si4464_30_434_2GFSK_5_10.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RF24configs\radio_config_Si4464_30_915_2GFSK_10_20.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RF24configs\radio_config_Si4464_30_915_2GFSK_5_10.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHCRC.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHDatagram.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHEncryptedDriver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHGenericDriver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHGenericSPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHHardwareSPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHMesh.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHNRFSPIDriver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHReliableDatagram.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHRouter.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHSoftwareSPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHSPIDriver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHTcpProtocol.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHutil\atomic.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHutil\HardwareSerial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHutil\RasPi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHutil\simulator.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RHutil_pigpio\RasPi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_ABZ.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_ASK.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_CC110.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_E32.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_MRF89.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_NRF24.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_NRF51.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_NRF905.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_RF22.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_RF24.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_RF69.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_RF95.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_Serial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\RH_TCP.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\STM32ArduinoCompat\HardwareSerial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\STM32ArduinoCompat\HardwareSPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\radiohead\STM32ArduinoCompat\wirish.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\SD.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\FatStructs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\Sd2Card.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\Sd2PinMap.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\SdFat.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\SdFatmainpage.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\SdFatUtil.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\SdInfo.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SPI\SPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\ArduinoCompat\Client.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\ArduinoCompat\IPAddress.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClient.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientA6.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientBG96.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientESP8266.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientM590.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientM95.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientMC60.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientSaraR4.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientSequansMonarch.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientSIM5360.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientSIM7000.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientSIM7600.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientSIM800.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientSIM808.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientUBLOX.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmClientXBee.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmCommon.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\TinyGSM\TinyGsmFifo.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\Wire\utility\twi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\Wire\Wire.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\variants\mega\pins_arduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\abi.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\CDC.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\HardwareSerial.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\HardwareSerial0.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\HardwareSerial1.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\HardwareSerial2.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\HardwareSerial3.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\hooks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\IPAddress.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\new.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\PluggableUSB.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\PreprocessingAssembly\wiring_pulse.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\Print.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\Stream.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\Tone.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\USBCore.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\WInterrupts.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\wiring.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\wiring_analog.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\wiring_digital.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\wiring_pulse.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\wiring_shift.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\WMath.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\WString.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\emonlib\EmonLib.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\liquidcrystal_i2c\LiquidCrystal_I2C.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\pubsubclient\PubSubClient.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\MGOSCompat\HardwareSerial.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\MGOSCompat\HardwareSPI.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\MGOSCompat\MGOS.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHCRC.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHDatagram.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHEncryptedDriver.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHGenericDriver.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHGenericSPI.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHHardwareSPI.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHMesh.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHNRFSPIDriver.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHReliableDatagram.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHRouter.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHSoftwareSPI.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHSPIDriver.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHutil\HardwareSerial.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHutil\RasPi.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RHutil_pigpio\RasPi.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_ABZ.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_ASK.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_CC110.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_E32.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_MRF89.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_NRF24.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_NRF51.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_NRF905.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_RF22.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_RF24.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_RF69.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_RF95.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_Serial.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\RH_TCP.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\STM32ArduinoCompat\HardwareSerial.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\STM32ArduinoCompat\HardwareSPI.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\STM32ArduinoCompat\wirish.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\radiohead\tools\simMain.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SD\File.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SD\SD.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SD\utility\Sd2Card.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SD\utility\SdFile.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SD\utility\SdVolume.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SPI\SPI.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\Wire\utility\twi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\Wire\Wire.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="include\" />
+    <Folder Include="include\core\" />
+    <Folder Include="include\libraries\" />
+    <Folder Include="include\libraries\ArduinoJson\" />
+    <Folder Include="include\libraries\ArduinoJson\ArduinoJson\" />
+    <Folder Include="include\libraries\ArduinoJson\ArduinoJson\Data\" />
+    <Folder Include="include\libraries\ArduinoJson\ArduinoJson\Deserialization\" />
+    <Folder Include="include\libraries\ArduinoJson\ArduinoJson\Polyfills\" />
+    <Folder Include="include\libraries\ArduinoJson\ArduinoJson\Serialization\" />
+    <Folder Include="include\libraries\ArduinoJson\ArduinoJson\StringTraits\" />
+    <Folder Include="include\libraries\ArduinoJson\ArduinoJson\TypeTraits\" />
+    <Folder Include="include\libraries\EEPROM\" />
+    <Folder Include="include\libraries\emonlib\" />
+    <Folder Include="include\libraries\liquidcrystal_i2c\" />
+    <Folder Include="include\libraries\pubsubclient\" />
+    <Folder Include="include\libraries\radiohead\" />
+    <Folder Include="include\libraries\radiohead\MGOSCompat\" />
+    <Folder Include="include\libraries\radiohead\RF24configs\" />
+    <Folder Include="include\libraries\radiohead\RHutil\" />
+    <Folder Include="include\libraries\radiohead\RHutil_pigpio\" />
+    <Folder Include="include\libraries\radiohead\STM32ArduinoCompat\" />
+    <Folder Include="include\libraries\SD\" />
+    <Folder Include="include\libraries\SD\utility\" />
+    <Folder Include="include\libraries\SPI\" />
+    <Folder Include="include\libraries\TinyGSM\" />
+    <Folder Include="include\libraries\TinyGSM\ArduinoCompat\" />
+    <Folder Include="include\libraries\Wire\" />
+    <Folder Include="include\libraries\Wire\utility\" />
+    <Folder Include="include\variants\" />
+    <Folder Include="include\variants\mega\" />
+    <Folder Include="src\" />
+    <Folder Include="src\core\" />
+    <Folder Include="src\core\PreprocessingAssembly\" />
+    <Folder Include="src\libraries\" />
+    <Folder Include="src\libraries\emonlib\" />
+    <Folder Include="src\libraries\liquidcrystal_i2c\" />
+    <Folder Include="src\libraries\pubsubclient\" />
+    <Folder Include="src\libraries\radiohead\" />
+    <Folder Include="src\libraries\radiohead\MGOSCompat\" />
+    <Folder Include="src\libraries\radiohead\RHutil\" />
+    <Folder Include="src\libraries\radiohead\RHutil_pigpio\" />
+    <Folder Include="src\libraries\radiohead\STM32ArduinoCompat\" />
+    <Folder Include="src\libraries\radiohead\tools\" />
+    <Folder Include="src\libraries\SD\" />
+    <Folder Include="src\libraries\SD\utility\" />
+    <Folder Include="src\libraries\SPI\" />
+    <Folder Include="src\libraries\Wire\" />
+    <Folder Include="src\libraries\Wire\utility\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libraries\radiohead\project.cfg">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\radiohead\tools\chain.conf">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
